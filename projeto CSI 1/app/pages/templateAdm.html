@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>CSI Group - Adicionar Serviço</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Imports -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="../style/css/style.css" rel="stylesheet" type="text/css">
+
+    <link href="../style/materialize/css/materialize.min.css" media="screen,projection" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body id="addServico" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <div id="templateAdm" class="container-fluid">
+
+        <!-- Cabeçalho -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+                    <a class="navbar-brand">CSI Group</a>
+                    <p id="usuario" class="waves-effect waves-teal">Usuária: ADM</p>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="../index.html" class="botaoMenu">SAIR</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="alterarAdm.html" class="botaoMenu">EDITAR CONTA</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="row">
+            <div class="col s12 m12 l12 offset-l3">
+                <h5>Usuários</h5>
+            </div>
+        </div>
+
+        <!-- Tabela de serviço do usuário -->
+        <div class="row">
+            <div class="col s12 m12 l6 offset-l3">
+                <table id="dados" class="highlight">
+                    <thead>
+                        <tr>
+                            <th>Usuário</th>
+                            <th>Serviço</th>
+                            <th>Data de agendamento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Max</td>
+                            <td>Energia</td>
+                            <td>16 Outubro, 2017</td>
+                        </tr>
+                        <tr>
+                            <td>Maria</td>
+                            <td>Audiovisual</td>
+                            <td>16 Dezembro, 2017</td>
+                        </tr>
+                        <tr>
+                            <td>Vivianny</td>
+                            <td>Outsourcing</td>
+                            <td>11 Setembro, 2017</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

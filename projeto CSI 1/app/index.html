@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>CSI Group</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Imports -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href="style/css/style.css" rel="stylesheet" type="text/css">
+
+  <link href="style/materialize/css/materialize.min.css" media="screen,projection" type="text/css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body id="index" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+  <!-- Cabeçalho -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#index">CSI Group</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#login">LOGIN</a></li>
+          <li><a href="#cadastro">CADASTRA-SE</a></li>
+          <li><a href="#empresa">EMPRESA</a></li>
+          <li><a href="#servico">MERCADOS</a></li>
+          <li><a href="#contato">CONTATO</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Container Login -->
+  <div id="loginUser" class="jumbotron text-center">
+    <div class="row">
+      <hgroup>
+        <h1>Login</h1>
+      </hgroup>
+      <div class="col s12 m12 l6 offset-l3">
+        <form id="login" method="post" action="">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="group">
+                <label for="email">E-mail</label>
+              </div>
+              <div>
+                <input id="email" name="email" type="text" class="input" size="30" required autofocus>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="group">
+                <label for="senha">Senha</label>
+              </div>
+              <div>
+                <input id="senha" name="senha" type="password" class="input" min="6" max="16" size="30" required>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group">
+              <button id="entra" type="button" class="waves-effect waves-light btn" onClick="Login();">Entra</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Container  register-->
+  <div id="cadastro" class="container-fluid">
+    <hgroup>
+      <h1>Cadastro de usuário</h1>
+    </hgroup>
+    <div class="row">
+      <div class="col s12 m12 l6 offset-l3">
+        <form>
+          <div class="row">
+            <div class="group">
+              <label for="nomeUser">Name</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons dp48 prefix">account_circle</i>
+              <input id="nomeUser" type="text">
+            </div>
+          </div>
+          <div class="row">
+            <div class="group">
+              <label for="cadastroEmail">Email</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons dp48 prefix">markunread</i>
+              <input id="cadastroEmail" type="email">
+            </div>
+          </div>
+          <div class="row">
+            <div class="group">
+              <label for="password">Password</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons dp48 prefix">lock</i>
+              <input id="password" type="password">
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field">
+              <button class="waves-effect waves-light btn right" type="submit" name="action">Cadastra</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div id="empresa" class="container-fluid bg-grey">
+    <div class="row">
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-briefcase logo slideanim"></span>
+      </div>
+      <div class="col-sm-8">
+        <h2>O que somos</h2><br>
+        <h5><strong>CSI Group:</strong> é um grupo sólido que atua no mercado brasileiro desde 1999, nas áreas de locação em
+          ENERGIA, AUDIOVISUAL E OUTSOURCING DE T.I, sendo considerada a maior e mais inovadora empresa em seu ramo. Nasceu
+          do sonho de seu fundador em criar soluções tecnológicas rápidas, seguras e confiáveis para que seus clientes pudessem
+          focar em seu core business.</h5>
+      </div>
+    </div>
+  </div>
+
+  <!-- Container of Services -->
+  <div id="servico" class="container-fluid text-center">
+    <h2>Mercados</h2>
+    <br>
+    <div class="row slideanim">
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-film logo-small"></span>
+        <h4>AUDIOVISUAL</h4>
+        <p>CSI Audiovisual é uma empresa especializada em locação de equipamentos audiovisuais para pequenos e grandes eventos.</p>
+      </div>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-briefcase logo-small"></span>
+        <h4>OUTSOURCING</h4>
+        <p>CSI Outsourcing é especializada em Outsourcing de TI para empresas, cujo negócio principal é IaaS</p>
+      </div>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-globe logo-small"></span>
+        <h4>ENERGIA</h4>
+        <p>CSI Energia é especializada em locação de grupos geradores para construção civil, eventos e empresas. Especializada
+          em locação de grupos</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Container of customers -->
+  <div class="container-fluid text-center bg-grey">
+    <h2>Nossos clientes</h2><br>
+    <div class="row text-center slideanim">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="style/img/rede.jpg" alt="Paris" width="400" height="300">
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="style/img/nacional.jpg" alt="New York" width="400" height="300">
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="style/img/crc.png" alt="San Francisco" width="400" height="300">
+        </div>
+      </div>
+    </div><br>
+
+    <h2>O que nossos clientes dizem</h2>
+    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <h4>"A CSI nossa parceira no aluguel de equipamentos para informática, tem hoje para nós no seu atendimento, nosso
+            ponto chave, onde não podemos parar por falta de um equipamento. Sua rápida entrega e reposição nos garante a
+            continuidade do nosso serviço, não causando nenhum impacto nos negócios da nossa empresa."<br><span>Washington Machado</span></h4>
+        </div>
+        <div class="item">
+          <h4>"Registramos nossos agradecimentos a todos da CSI Eventos, por atenderem tão prontamente às nossas solicitações.
+            É muito gratificante trabalhar com uma equipe que atua com profissionalismo e dedicação."<br><span>Val Sousa</span></h4>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    </div>
+  </div>
+
+  <!-- Container (Contato Section) -->
+  <div id="contato" class="container-fluid bg-grey">
+    <h2 class="text-center">Contato</h2>
+    <div class="row">
+      <div class="col-sm-5">
+        <p>Contato da empresa.</p>
+        <p><span class="glyphicon glyphicon-map-marker"></span> R. Antônio Augusto, 2460 - Aldeota, Fortaleza - CE, 60110-371</p>
+        <p><span class="glyphicon glyphicon-phone"></span> (85) 3305-7000</p>
+        <p><span class="glyphicon glyphicon-envelope"></span> CSIGroup@gmail.com</p>
+      </div>
+      <div class="col-sm-7 slideanim">
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="nome" name="nome" placeholder="Nome" type="text" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="e-mail" name="e-mail" placeholder="Email" type="email" required>
+          </div>
+        </div>
+        <textarea class="form-control" id="mensagem" name="mensagem" placeholder="Mensagem" rows="5"></textarea><br>
+        <div class="row">
+          <div class="col-sm-12 form-group">
+            <button class="btn btn-default pull-right" type="submit">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid text-center">
+    <h2>Redes sociais</h2><br>
+    <div class="row text-center slideanim">
+      <div class="col s12 m12 l6">
+        <div class="thumbnail">
+          <i class="fa fa-facebook-square"></i><a href="https://www.facebook.com/csilocacoes/"> Facebook</a>
+        </div>
+      </div>
+      <div class="col s12 m12 l6">
+        <div class="thumbnail">
+          <i class="fa fa-linkedin-square"></i><a href="https://www.linkedin.com/in/csi-loca%C3%A7%C3%B5es-12080a33/"> Linkedin</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="container-fluid text-center">
+    <a href="#index" title="Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+    <p>CSI Group</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="style/js/actions.js"></script>
+  <script src="style/bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  <script>
+    /* Ações que devem ocorrer durante a rolagem do sistema, atualizando de acordo com navegação */
+    $(document).ready(function () {
+      $(".navbar a, footer a[href='#index']").on('click', function (event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 900, function () {
+            window.location.hash = hash;
+          });
+        }
+      });
+
+      $(window).scroll(function () {
+        $(".slideanim").each(function () {
+          var pos = $(this).offset().top;
+
+          var winTop = $(window).scrollTop();
+          if (pos < winTop + 600) {
+            $(this).addClass("slide");
+          }
+        });
+      });
+    })
+  </script>
+
+</body>
+
+</html>

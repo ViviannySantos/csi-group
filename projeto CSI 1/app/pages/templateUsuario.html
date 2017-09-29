@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Usuário</title>
+
+  <!-- Imports -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="../style/css/style.css" rel="stylesheet" type="text/css">
+
+  <link type="text/css" rel="stylesheet" href="../style/materialize/css/materialize.min.css" media="screen,projection" />
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+</head>
+
+<body id="telaUsuario" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+  <div id="templateUser" class="">
+
+    <!-- Cabeçalho -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          <a class="navbar-brand">CSI Group</a>
+          <p id="usuario" class="waves-effect waves-teal">Usuária: Vivianny Santos</p>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../index.html" class="botaoMenu">SAIR</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="alterarUsuario.html" class="botaoMenu">EDITAR CONTA</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid" id="formServico">
+      <!-- Formulário de inclução de serviço -->
+      <div class="row">
+        <div class="col s12 m12 l6 offset-l3">
+          <div class="panel panel-default">
+            <div class="panel-heading">Adicionar Serviço</div>
+            <div class="">
+              <form>
+                <div class="form-group">
+                  <label for="servico">Serviço</label><br>
+                  <input type="text" name="servico" id="servico" class="form-control input-lg">
+                </div>
+
+                <div class="form-group">
+                  <label for="data">Data de Agendamento</label><br>
+                  <input type="text" name="data" id="dataAgendamento" class="datepicker">
+                </div>
+
+                <div class="form-group">
+                  <button type="button" id="updateButton" onclick="updateDatas();" class="waves-effect waves-light btn">
+                    Adicionar Serviço
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m12 l6 offset-l3">
+          <h5>Serviço Cadastrados</h5>
+        </div>
+      </div>
+
+      <!-- Tabela de serviço do usuário -->
+      <div class="row">
+        <div class="col s12 m12 l6 offset-l3">
+          <table id="bookTable" class="highlight">
+            <thead>
+              <tr>
+                <th>Serviço</th>
+                <th>Data de agendamento</th>
+                <th>Editar</th>
+                <th>Eliminar</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script type="text/javascript" src="../style/materialize/js/materialize.min.js"></script>
+  <script src="../style/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../style/js/actions.js"></script>
+
+</body>
+
+</html>

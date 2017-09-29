@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>CSI Group - Alterar Usuário</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Imports -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="../style/css/style.css" rel="stylesheet" type="text/css">
+
+  <link href="../style/materialize/css/materialize.min.css" media="screen,projection" type="text/css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body id="alterarUser" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+  <!-- Cabeçalho -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">CSI Group</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Container  register-->
+  <div id="alterarUsu" class="container-fluid">
+    <hgroup>
+      <h1>Alteração de usuário</h1>
+    </hgroup>
+    <div class="row">
+      <div class="col s12 m12 l6 offset-l3">
+        <form>
+          <div class="row">
+            <div class="group">
+              <label for="email">Email</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons dp48 prefix">markunread</i>
+              <input id="email" type="email">
+            </div>
+          </div>
+          <div class="row">
+            <div class="group">
+              <label for="password">Password</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons dp48 prefix">lock</i>
+              <input id="password" type="password">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s6 m6 l6">
+                <button class="btn waves-effect waves-light red left" formaction="templateUsuario.html">Cancelar</button>
+              </div>
+            <div id="alterar" class="col s6 m6 l6">
+                <button class="waves-effect waves-light btn right" formaction="templateUsuario.html">Alterar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="../style/js/actions.js"></script>
+</body>
+
+</html>
